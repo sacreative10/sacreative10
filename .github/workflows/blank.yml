@@ -15,3 +15,11 @@ jobs:
         plugin_habits_facts: no
         plugin_habits_charts: yes
         config_timezone: Europe/London
+    - name: Half-year calendar
+      uses: lowlighter/metrics@latest
+      with:
+        filename: metrics.plugin.isocalendar.svg
+        token: ${{ secrets.METRICS_TOKEN }}
+        base: ""
+        plugin_isocalendar: yes
+
